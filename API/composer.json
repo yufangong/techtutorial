@@ -1,0 +1,13 @@
+{
+    "name": "vendor/demo",
+    "description": "Description of project demo.",
+    "authors": [
+        {
+            "name": "yufangong",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "slim/slim": "dev-master"
+    }
+}
