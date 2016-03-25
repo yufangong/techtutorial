@@ -100,9 +100,7 @@ class TutorialsController extends Controller
      */
     public function actionCreate()
     {
-        echo json_encode(\Yii::$app->user->can('createPost'));
        if (\Yii::$app->user->can('createPost')) {
-            // create post
 
             $model = new Tutorials();
         
@@ -128,7 +126,6 @@ class TutorialsController extends Controller
     public function actionUpload($id)
     {                
         $model = $this->findModel($id);
-
         if (\Yii::$app->user->can('uploadFile', ['post' => $model])) {
             if(empty($_FILES['file']['name']))
             {
@@ -168,15 +165,9 @@ class TutorialsController extends Controller
             {
                 $output = ['ok' => 'File Upload Successed'];
                 
-                //$model->setAttribute('file', $target_file);
-                //array_push($model->file, $target_file);
                 $files = (array)$model->getAttribute('file');
-                //$newfile = [basename($_FILES['file']['name']), $target_file];
                 array_push($files, $filename);
                 $model->setAttribute('file', $files);
-               //$model->setAttribute('file', null);
-                //echo json_encode($model->file);
-                //$model->load(['file' => $targloadet_file]);
                 $model->save();
             }
             elseif(!$success)
@@ -238,9 +229,8 @@ class TutorialsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        //echo json_encode(\Yii::$app->user->can('updatePost', ['post' => $model]));
         if (\Yii::$app->user->can('updatePost', ['post' => $model])) {
-
-            //$model = $this->findModel($id);
 
             if ($model->load(Yii::$app->request->post()) && $model->save()) {
                 return $this->redirect(['view', 'id' => (string)$model->_id]);

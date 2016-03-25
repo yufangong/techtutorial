@@ -17,14 +17,10 @@ use yii\widgets\ActiveField;
 
     <?= $form->field($model, 'title') ?>
 
-    
-
     <?= $form->field($model, 'category') ?>
    
     <?= $form->field($model, 'content')->textarea(['rows' => '20']) ?>
-
-    
-
+  
 
     <br>
     <div class="form-group">

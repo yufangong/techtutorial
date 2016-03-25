@@ -43,9 +43,7 @@ class RbacController extends Controller
         $updateOwnPost = $auth->createPermission('updateOwnPost');
         $updateOwnPost->description = 'Update own post';
         $updateOwnPost->ruleName = $rule->name;
-        $auth->add($updateOwnPost);
-        
-        // "updateOwnPost" will be used from "updatePost"
+        $auth->add($updateOwnPost);    
         $auth->addChild($updateOwnPost, $updatePost);
         
         //$rule2 = new \console\rbac\UserGroupRule();
@@ -57,7 +55,6 @@ class RbacController extends Controller
         
         // add "author" role and give this role the "createPost" permission
         $editor = $auth->createRole('editor');
-        //$editor->ruleName = $rule2->name;
         $auth->add($editor);
         $auth->addChild($editor, $createPost);
         $auth->addChild($editor, $user);

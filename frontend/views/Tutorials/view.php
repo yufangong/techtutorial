@@ -39,7 +39,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'updated_at',
             'category',
             //'file',
-            'content',
+            [   'attribute' => 'content',
+                'format' => 'ntext',
+            ],
         ],
     ]) ?>
     

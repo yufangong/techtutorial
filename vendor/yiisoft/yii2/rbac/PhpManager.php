@@ -98,6 +98,7 @@ class PhpManager extends BaseManager
     public function checkAccess($userId, $permissionName, $params = [])
     {
         $assignments = $this->getAssignments($userId);
+        //echo json_encode($assignments);
         return $this->checkAccessRecursive($userId, $permissionName, $params, $assignments);
     }
 
@@ -107,7 +108,7 @@ class PhpManager extends BaseManager
     public function getAssignments($userId)
     {
 //        echo $userId;
-//       echo json_encode($this->assignments["55431d5d7b446e63050041a9"]);
+//       echo json_encode($this->assignments["5544177c8ead0e31030041a7"]);
         return isset($this->assignments[$userId]) ? $this->assignments[$userId] : [];
 //        return 'admin';
     }

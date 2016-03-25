@@ -140,7 +140,7 @@ function makeTutorial($document, $username)
         if(isset($document['keywords'])) {$keywords = $document['keywords'];}
         
         $files = array();
-        if(isset($document['files'])) {$files = $document['files'];}
+        if(isset($document['file'])) {$files = $document['file'];}
         
         $content = '';
         if(isset($document['content'])) {$content = $document['content'];}
@@ -148,7 +148,7 @@ function makeTutorial($document, $username)
         $create_time = date("Y-m-d H:i:s");
         $lastmodifiedtime=date("Y-m-d H:i:s");
         
-    $out=array('title' => $title, 'author' => $author, 'category' => $category, 'keywords' => $keywords, 'files' => $files, 'content' => $content, 'created_at' => $create_time, 'updated_at'=>$lastmodifiedtime);
+    $out=array('title' => $title, 'author' => $author, 'category' => $category, 'keywords' => $keywords, 'file' => $files, 'content' => $content, 'created_at' => $create_time, 'updated_at'=>$lastmodifiedtime);
     
     
     return $out;
@@ -163,7 +163,7 @@ function checkTutorial($document, $username, $title)
 
         if(isset($document['keywords'])) {$out = array_merge($out,array('keywords'=>$document['keywords']));}
         
-        if(isset($document['files'])) {$out = array_merge($out,array('files'=>$document['files']));}
+        if(isset($document['file'])) {$out = array_merge($out,array('file'=>$document['file']));}
         
         if(isset($document['content'])) {$out = array_merge($out,array('content'=>$document['content']));}
         
