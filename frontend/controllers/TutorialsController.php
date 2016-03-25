@@ -13,7 +13,7 @@ use yii\filters\VerbFilter;
 /**
  * TutorialsController implements the CRUD actions for Tutorials model.
  */
-const ROOT_PATH = "../../../repository/";
+const ROOT_PATH = "../../repository/";
 class TutorialsController extends Controller
 {
     

@@ -20,7 +20,7 @@ class UploadController extends \yii\web\Controller
 
 
         //$ext = explode('.', basename($filename));
-        $folder = "../repository";
+        $folder = "../../repository";
         $target_file = $folder . DIRECTORY_SEPARATOR . basename($_FILES['file']['name']);
         
         if (file_exists($target_file)) {

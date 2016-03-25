@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/web/index.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/views/layouts/main.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/views/site/index.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/views/Tutorials/view.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/models/Tutorials.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/controllers/UploadController.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/tutorials.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/index.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/mongo/mongoCommand.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/API/vendor/autoload.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/createDocument.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/home.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/loginAction.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/upload.html</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/data.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/mongo/mongodbCRUD.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/api/mongo/mongodbList.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/controllers/SiteController.php</file>
+            <file>file:/Library/WebServer/Documents/techtutorial/frontend/controllers/TutorialsController.php</file>
+        </group>
+    </open-files>
+</project-private>
