@@ -9,12 +9,12 @@ use yii\helpers\Url;
     <div class="jumbotron">
         <h1 class ="btn-success">WELCOME TO THE TECHTUTORIAL!</h1>
 
-        <p class="lead">Ready to program?</p>
-        <br>
+        <p class="lead">A place to learn and share</p>
+        <br><br>
         <?php
             $create = Url::to(['tutorials/create']);
                 
-            echo "<p class='btn btn-lg btn-success'><a href = $create >Create Tutorial</a></p>"
+            echo "<p> <a href = $create class='btn btn-lg btn-success'>Create Tutorial</a></p>"
         ?>
 <!--        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>-->
     </div>

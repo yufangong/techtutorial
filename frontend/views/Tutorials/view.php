@@ -52,9 +52,8 @@ $this->params['breadcrumbs'][] = $this->title;
         {
         
         $fileaddress = Url::to(['tutorials/download', 'file' => $file ]);
-        echo "<p class = 'btn btn-success']><a href = $fileaddress >Download {$file}</a></p>";
-         echo "<br>";
-        
+        echo "<a href = $fileaddress  class='btn btn-success']>Download {$file}</a></p>";
+                
         }
         
     }
