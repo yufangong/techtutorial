@@ -17,22 +17,22 @@
 //get -- get all tutorials
 ```html
 GET
-http://localhost/techtutorial/api/index.php/api/data/tt/tutorials
+http://localhost/techtutorial/api/index.php/api/data/tt/Tutorials
 ```
 //get --- get tutorial id = 1
 ```html
 GET 
-http://localhost/techtutorial/api/index.php/api/data/tt/tutorials/1
+http://localhost/techtutorial/api/index.php/api/data/tt/Tutorials/1
 ```
 //get -- get tutorial cate = C++
 ```html
 GET 
-http://localhost/techtutorial/api/index.php/api/data/tt/tutorials/cate/Cplusplus
+http://localhost/techtutorial/api/index.php/api/data/tt/Tutorials/cate/Cplusplus
 ```
 //post - create a tutorial
 ```html
 POST 
-http://localhost/techtutorial/api/index.php/api/data/tt/tutorials
+http://localhost/techtutorial/api/index.php/api/data/tt/Tutorials
 ContentType: application/json
 body
 {	"id":"6",
